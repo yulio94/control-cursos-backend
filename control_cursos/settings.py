@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     # Rest Framework Auth token
     'rest_framework.authtoken',
+    # django-rest-auth
+    'rest_auth',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     )
 }

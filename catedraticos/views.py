@@ -8,7 +8,7 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
-def catedraico_list_view(request):
+def catedratico_list_view(request):
     """
         List all catedraticos, or create a new.
     """
